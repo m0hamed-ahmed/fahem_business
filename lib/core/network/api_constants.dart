@@ -1,0 +1,119 @@
+class ApiConstants {
+
+  static const String baseUrl = "https://wazfnee.com/fahem-api/";
+  // static const String baseUrl = "http://192.168.1.3/projects/fahem-api/";
+
+  // End Points
+  static const String getVersionEndPoint = "${baseUrl}version/get_version.php";
+  static const String getBookingAppointmentsForTargetEndPoint = "${baseUrl}transactions/booking_appointments/get_booking_appointments_for_target.php";
+  static const String getEmploymentApplicationsForTargetEndPoint = "${baseUrl}jobs/employment_applications/get_employment_applications_for_target.php";
+  static const String getAllInstantConsultationsForLawyerEndPoint = "${baseUrl}transactions/instant_consultations/get_all_instant_consultations_for_lawyer.php";
+  static const String insertInstantConsultationCommentEndPoint = "${baseUrl}transactions/instant_consultations_comments/insert_instant_consultation_comment.php";
+  static const String getJobsForTargetEndPoint = "${baseUrl}jobs/jobs/get_jobs_for_target.php";
+  static const String insertJobEndPoint = "${baseUrl}jobs/jobs/insert_job.php";
+  static const String editJobEndPoint = "${baseUrl}jobs/jobs/edit_job.php";
+  static const String deleteJobEndPoint = "${baseUrl}jobs/jobs/delete_job.php";
+  static const String checkAndGetLawyerEndPoint = "${baseUrl}lawyers/lawyers/check_and_get_lawyer.php";
+  static const String getLawyerEndPoint = "${baseUrl}lawyers/lawyers/get_lawyer.php";
+  static const String isAllLawyerDataValidEndPoint = "${baseUrl}lawyers/lawyers/is_all_lawyer_data_valid.php";
+  static const String insertLawyerEndPoint = "${baseUrl}lawyers/lawyers/insert_lawyer.php";
+  static const String editLawyerEndPoint = "${baseUrl}lawyers/lawyers/edit_lawyer.php";
+  static const String editSubscriptionOfFahemServicesEndPoint = "${baseUrl}lawyers/lawyers/edit_subscription_of_fahem_services.php";
+  static const String deleteLawyerEndPoint = "${baseUrl}lawyers/lawyers/delete_lawyer.php"; // wait
+  static const String getAllLawyersCategoriesEndPoint = "${baseUrl}lawyers/lawyers_categories/get_all_lawyers_categories.php";
+  static const String getLawyerReviewsForOneEndPoint = "${baseUrl}lawyers/lawyers_reviews/get_lawyer_reviews_for_one.php";
+  static const String checkAndGetLegalAccountantEndPoint = "${baseUrl}legal_accountants/legal_accountants/check_and_get_legal_accountant.php";
+  static const String getLegalAccountantEndPoint = "${baseUrl}legal_accountants/legal_accountants/get_legal_accountant.php";
+  static const String isAllLegalAccountantDataValidEndPoint = "${baseUrl}legal_accountants/legal_accountants/is_all_legal_accountant_data_valid.php";
+  static const String insertLegalAccountantEndPoint = "${baseUrl}legal_accountants/legal_accountants/insert_legal_accountant.php";
+  static const String editLegalAccountantEndPoint = "${baseUrl}legal_accountants/legal_accountants/edit_legal_accountant.php";
+  static const String deleteLegalAccountantEndPoint = "${baseUrl}legal_accountants/legal_accountants/delete_legal_accountant.php"; // wait
+  static const String getLegalAccountantReviewsForOneEndPoint = "${baseUrl}legal_accountants/legal_accountants_reviews/get_legal_accountant_reviews_for_one.php";
+  static const String checkAndGetPublicRelationEndPoint = "${baseUrl}public_relations/public_relations/check_and_get_public_relation.php";
+  static const String getPublicRelationEndPoint = "${baseUrl}public_relations/public_relations/get_public_relation.php";
+  static const String isAllPublicRelationDataValidEndPoint = "${baseUrl}public_relations/public_relations/is_all_public_relation_data_valid.php";
+  static const String insertPublicRelationEndPoint = "${baseUrl}public_relations/public_relations/insert_public_relation.php";
+  static const String editPublicRelationEndPoint = "${baseUrl}public_relations/public_relations/edit_public_relation.php";
+  static const String deletePublicRelationEndPoint = "${baseUrl}public_relations/public_relations/delete_public_relation.php"; // wait
+  static const String getAllPublicRelationsCategoriesEndPoint = "${baseUrl}public_relations/public_relations_categories/get_all_public_relations_categories.php";
+  static const String getPublicRelationReviewsForOneEndPoint = "${baseUrl}public_relations/public_relations_reviews/get_public_relation_reviews_for_one.php";
+  static const String getRequestThePhoneNumberForTargetEndPoint = "${baseUrl}transactions/request_the_phone_number/get_request_the_phone_number_for_target.php";
+  static const String editLawyerIdentificationImagesEndPoint = "${baseUrl}lawyers/lawyers/edit_lawyer_identification_images.php";
+  static const String editPublicRelationIdentificationImagesEndPoint = "${baseUrl}public_relations/public_relations/edit_public_relation_identification_images.php";
+  static const String editLegalAccountantIdentificationImagesEndPoint = "${baseUrl}legal_accountants/legal_accountants/edit_legal_accountant_identification_images.php";
+  static const String editLawyerBookingByAppointmentEndPoint = "${baseUrl}lawyers/lawyers/edit_lawyer_booking_by_appointment.php";
+  static const String editPublicRelationBookingByAppointmentEndPoint = "${baseUrl}public_relations/public_relations/edit_public_relation_booking_by_appointment.php";
+  static const String editLegalAccountantBookingByAppointmentEndPoint = "${baseUrl}legal_accountants/legal_accountants/edit_legal_accountant_booking_by_appointment.php";
+  static const String uploadFileEndPoint = "${baseUrl}upload_file.php";
+
+  // Fields
+  static const String jobIdField = "jobId";
+  static const String targetIdField = "targetId";
+  static const String lawyerIdField = "lawyerId";
+  static const String transactionIdField = "transactionId";
+  static const String publicRelationIdField = "publicRelationId";
+  static const String legalAccountantIdField = "legalAccountantId";
+  static const String appField = "app";
+  static const String targetNameField = "targetName";
+  static const String transactionTypeField = "transactionType";
+  static const String imageField = "image";
+  static const String jobTitleField = "jobTitle";
+  static const String companyNameField = "companyName";
+  static const String aboutCompanyField = "aboutCompany";
+  static const String minSalaryField = "minSalary";
+  static const String maxSalaryField = "maxSalary";
+  static const String currencyIdField = "currencyId";
+  static const String jobLocationField = "jobLocation";
+  static const String featuresField = "features";
+  static const String detailsField = "details";
+  static const String isAvailableField = "isAvailable";
+  static const String nameField = "name";
+  static const String emailAddressField = "emailAddress";
+  static const String passwordField = "password";
+  static const String categoriesIdsField = "categoriesIds";
+  static const String personalImageField = "personalImage";
+  static const String addressField = "address";
+  static const String informationField = "information";
+  static const String phoneNumberField = "phoneNumber";
+  static const String consultationPriceField = "consultationPrice";
+  static const String tasksField = "tasks";
+  static const String imagesField = "images";
+  static const String latitudeField = "latitude";
+  static const String longitudeField = "longitude";
+  static const String governorateField = "governorate";
+  static const String accountStatusField = "accountStatus";
+  static const String isBookingByAppointmentField = "isBookingByAppointment";
+  static const String availablePeriodsField = "availablePeriods";
+  static const String identificationImagesField = "identificationImages";
+  static const String commentField = "comment";
+  static const String commentStatusField = "commentStatus";
+  static const String isSubscriberToInstantLawyerServiceField = "isSubscriberToInstantLawyerService";
+  static const String isSubscriberToInstantConsultationServiceField = "isSubscriberToInstantConsultationService";
+  static const String isSubscriberToSecretConsultationServiceField = "isSubscriberToSecretConsultationService";
+  static const String isSubscriberToEstablishingCompaniesServiceField = "isSubscriberToEstablishingCompaniesService";
+  static const String isSubscriberToRealEstateLegalAdviceServiceField = "isSubscriberToRealEstateLegalAdviceService";
+  static const String isSubscriberToInvestmentLegalAdviceServiceField = "isSubscriberToInvestmentLegalAdviceService";
+  static const String isSubscriberToTrademarkRegistrationAndIntellectualProtectionServField = "isSubscriberToTrademarkRegistrationAndIntellectualProtectionServ";
+  static const String isSubscriberToDebtCollectionServiceField = "isSubscriberToDebtCollectionService";
+  static const String createdAtField = "createdAt";
+  static const String fileField = "file";
+  static const String directoryField = "directory";
+
+  // Images Directory
+  static const String lawyersDirectory = "lawyers";
+  static const String lawyersGalleryDirectory = "lawyers_gallery";
+  static const String lawyersCategoriesDirectory = "lawyers_categories";
+  static const String lawyersIdentificationDirectory = "lawyers_identification";
+  static const String publicRelationsDirectory = "public_relations";
+  static const String publicRelationsGalleryDirectory = "public_relations_gallery";
+  static const String publicRelationsCategoriesDirectory = "public_relations_categories";
+  static const String publicRelationsIdentificationDirectory = "public_relations_identification";
+  static const String legalAccountantsDirectory = "legal_accountants";
+  static const String legalAccountantsGalleryDirectory = "legal_accountants_gallery";
+  static const String legalAccountantsIdentificationDirectory = "legal_accountants_identification";
+  static const String jobsDirectory = "jobs";
+  static const String employmentApplicationsDirectory = "employment_applications";
+
+  // Files URL
+  static String fileUrl({required String fileName}) => '${baseUrl}upload/$fileName';
+}
